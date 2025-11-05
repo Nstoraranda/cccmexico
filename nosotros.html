@@ -6,51 +6,61 @@
   <title>Nosotros | Centro Carismático Calvario de México</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
 
-  <!-- === HEADER (idéntico al index) === -->
+  <!-- === HEADER === -->
   <header>
-  <div class="header-container">
-    <div class="logo-titulo">
-      <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="logo">
-      <h1 class="titulo-iglesia">Centro Carismático Calvario de México</h1>
-    </div>
-
-    <nav class="menu">
-      <a href="index.html#inicio">INICIO</a>
-      <a href="nosotros.html">NOSOTROS</a>
-      <a href="predicaciones.html" class="active">PREDICACIONES</a>
-
-      <!-- NUEVA PESTAÑA CON SUBMENÚ -->
-      <div class="dropdown">
-        <a href="#" class="dropbtn">GRUPOS</a>
-        <div class="dropdown-content">
-          <a href="adultosjovenes.html">Adultos Jóvenes</a>
-          <a href="mujeres.html">Mujeres</a>
-          <a href="#">Varones</a>
-          <a href="#">Niños</a>
-        </div>
+    <div class="header-container">
+      <!-- LOGO Y TÍTULO -->
+      <div class="logo-titulo">
+        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="logo">
+        <h1 class="titulo-iglesia">Centro Carismático Calvario de México</h1>
       </div>
-    </nav>
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MENÚ PRINCIPAL -->
+      <nav class="menu" id="menu">
+        <a href="index.html#inicio">INICIO</a>
+        <a href="nosotros.html" class="active">NOSOTROS</a>
+        <a href="predicaciones.html">PREDICACIONES</a>
+
+        <!-- SUBMENÚ GRUPOS -->
+        <div class="dropdown">
+          <a href="#" class="dropbtn">GRUPOS</a>
+          <div class="dropdown-content">
+            <a href="adultosjovenes.html">Adultos Jóvenes</a>
+            <a href="mujeres.html">Mujeres</a>
+            <a href="#">Varones</a>
+            <a href="#">Niños</a>
+          </div>
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7"
+            target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- === CUERPO PRINCIPAL === -->
   <section class="nosotros-cuerpo">
@@ -80,41 +90,41 @@
   </section>
 
   <!-- === FRASE INSPIRACIONAL === -->
-<section class="frase-section hidden-left">
-  <div class="frase-container">
-    <p class="frase-texto">“Dios transforma los corazones dispuestos en instrumentos de amor, esperanza y vida.”</p>
-    <p class="frase-firma">Familia CCC México</p>
-  </div>
-</section>
+  <section class="frase-section hidden-left">
+    <div class="frase-container">
+      <p class="frase-texto">“Dios transforma los corazones dispuestos en instrumentos de amor, esperanza y vida.”</p>
+      <p class="frase-firma">Familia CCC México</p>
+    </div>
+  </section>
 
-<!-- === SECCIÓN MISIÓN Y VISIÓN === -->
-<section class="mision-vision-section">
-  <div class="mision-vision-container">
-    <h2 class="hidden-left">MISIÓN Y VISIÓN</h2>
+  <!-- === SECCIÓN MISIÓN Y VISIÓN === -->
+  <section class="mision-vision-section">
+    <div class="mision-vision-container">
+      <h2 class="hidden-left">MISIÓN Y VISIÓN</h2>
 
-    <div class="mision-vision-content">
-      <!-- Misión -->
-      <div class="mision hidden-left">
-        <h3>MISIÓN</h3>
-        <p>
-          Ser una iglesia viva y comprometida con el mensaje de Cristo, llevando Su palabra a todas las personas
-          a través del amor, la enseñanza y el servicio, transformando vidas y familias con el poder del Espíritu Santo.
-        </p>
-      </div>
+      <div class="mision-vision-content">
+        <!-- Misión -->
+        <div class="mision hidden-left">
+          <h3>MISIÓN</h3>
+          <p>
+            Ser una iglesia viva y comprometida con el mensaje de Cristo, llevando Su palabra a todas las personas
+            a través del amor, la enseñanza y el servicio, transformando vidas y familias con el poder del Espíritu Santo.
+          </p>
+        </div>
 
-      <!-- Visión -->
-      <div class="vision hidden-right">
-        <h3>VISIÓN</h3>
-        <p>
-          Ser un faro de esperanza en nuestra comunidad, guiando a las personas hacia una relación personal con Dios,
-          edificando una generación apasionada por servir y extender Su reino con fe, amor y propósito.
-        </p>
+        <!-- Visión -->
+        <div class="vision hidden-right">
+          <h3>VISIÓN</h3>
+          <p>
+            Ser un faro de esperanza en nuestra comunidad, guiando a las personas hacia una relación personal con Dios,
+            edificando una generación apasionada por servir y extender Su reino con fe, amor y propósito.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- === FOOTER (igual al index) === -->
+  <!-- === FOOTER === -->
   <footer id="footer" class="footer-section hidden-left">
     <div class="footer-container">
 
@@ -158,6 +168,8 @@
     </div>
   </footer>
 
+  <!-- === Scripts === -->
+  <script src="menu.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
