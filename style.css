@@ -1837,4 +1837,9 @@ html, body {
   color: #d65f7b;
   font-weight: 700;
 }
-
+.nosotros-text p:last-child {
+  border-left: 4px solid #d65f7b;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-style: italic;
+}
