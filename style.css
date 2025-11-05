@@ -1736,3 +1736,84 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+/* === MENÚ HAMBURGUESA === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animación de transformación al abrir */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* --- VISTA MÓVIL --- */
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1500;
+    transition: all 0.4s ease;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a,
+  .menu .dropbtn {
+    font-size: 1.3em;
+    color: #fff;
+  }
+
+  .dropdown-content {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    color: #eaeaea;
+    font-size: 1.1em;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
