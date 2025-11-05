@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ministerio de Mujeres | Centro Carismático Calvario de México</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
 </head>
-<body>
 
+<body>
   <!-- === HEADER === -->
   <header>
     <div class="header-container">
+      <!-- LOGO -->
       <div class="logo-titulo">
-        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="logo">
+        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="logo" />
         <h1 class="titulo-iglesia">Centro Carismático Calvario de México</h1>
       </div>
 
-      <nav class="menu">
+      <!-- BOTÓN HAMBURGUESA -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MENÚ PRINCIPAL -->
+      <nav class="menu" id="menu">
         <a href="index.html#inicio">INICIO</a>
         <a href="nosotros.html">NOSOTROS</a>
         <a href="predicaciones.html">PREDICACIONES</a>
 
+        <!-- SUBMENÚ GRUPOS -->
         <div class="dropdown">
           <a href="#" class="dropbtn active">GRUPOS</a>
           <div class="dropdown-content">
-            <a href="adultosjovenes.html">ADULTOS JÓVENES</a>
-            <a href="mujeres.html" class="active">MUJERES</a>
-            <a href="#">NIÑOS</a>
-            <a href="#">EVENTOS ESPECIALES</a>
+            <a href="adultosjovenes.html">Adultos Jóvenes</a>
+            <a href="mujeres.html" class="active">Mujeres</a>
+            <a href="#">Varones</a>
+            <a href="#">Niños</a>
           </div>
         </div>
-      </nav>
 
-      <div class="social-icons">
-        <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7" target="_blank" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
+        <!-- ÍCONOS DE REDES -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
     </div>
   </header>
 
   <!-- === HERO CON VIDEO DE FONDO === -->
   <section class="mujeres-hero">
     <video autoplay muted loop playsinline class="video-fondo">
-      <source src="Imagenes/Principal/mujeres.mp4" type="video/mp4">
+      <source src="Imagenes/Principal/mujeres.mp4" type="video/mp4" />
       Tu navegador no soporta la reproducción de video.
     </video>
 
@@ -83,7 +100,7 @@
       </div>
 
       <div class="mujeres-img hidden-right">
-        <img src="Imagenes/Principal/mujeresfoto.jpg" alt="Ministerio de Mujeres">
+        <img src="Imagenes/Principal/mujeresfoto.jpg" alt="Ministerio de Mujeres" />
       </div>
     </div>
   </section>
@@ -91,29 +108,43 @@
   <!-- === FOOTER === -->
   <footer id="footer" class="footer-section hidden-left">
     <div class="footer-container">
+      <!-- CONTACTO -->
       <div class="footer-col contacto">
         <h3>CONTACTO</h3>
         <p><i class="fas fa-phone"></i> (+52) 55 21795683</p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:cccmexico94@gmail.com">cccmexico94@gmail.com</a></p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:cccmexico94@gmail.com">cccmexico94@gmail.com</a>
+        </p>
         <p>
           <i class="fas fa-map-marker-alt"></i>
           <a href="https://maps.app.goo.gl/x46SaQgmGrqSXvEC6" target="_blank">
-            Ezequiel 30, Guadalupe Tepeyac,<br> Gustavo A. Madero, 07840 CDMX
+            Ezequiel 30, Guadalupe Tepeyac,<br />Gustavo A. Madero, 07840 CDMX
           </a>
         </p>
       </div>
 
+      <!-- SERVICIOS -->
       <div class="footer-col logo-servicio hidden-right">
-        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="footer-logo">
+        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="footer-logo" />
         <h4 class="footer-servicios">SERVICIOS</h4>
-        <p><strong>Domingos</strong><br>10:30 AM</p>
+        <p><strong>Domingos</strong><br />10:30 AM</p>
         <div class="footer-redes">
-          <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a
+            href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a
+            href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
         </div>
       </div>
 
+      <!-- PETICIÓN -->
       <div class="footer-col oracion hidden-right">
         <a href="#contacto" class="btn-oracion">PETICIÓN DE ORACIÓN</a>
         <p class="versiculo">
@@ -128,6 +159,8 @@
     </div>
   </footer>
 
+  <!-- === SCRIPTS === -->
+  <script src="menu.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
