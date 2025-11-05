@@ -1661,3 +1661,78 @@ p {
     font-size: 0.95em;
   }
 }
+/* === AJUSTE DE HEADER Y MENÚ EN MÓVILES === */
+@media (max-width: 900px) {
+  header {
+    padding: 1em;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .titulo-iglesia {
+    font-size: 1em;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu a,
+  .menu .dropbtn {
+    font-size: 0.9em;
+    padding: 6px 0;
+    color: #fff;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .dropdown-content a {
+    color: #eaeaea;
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
+
+/* === AJUSTE GENERAL DE BODY PARA EVITAR DESBORDE === */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
