@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Predicaciones | Centro Carismático Calvario de México</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
 </head>
+
 <body>
-
-  <!-- === HEADER (idéntico a las otras páginas) === -->
+  <!-- === HEADER === -->
   <header>
-  <div class="header-container">
-    <div class="logo-titulo">
-      <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="logo">
-      <h1 class="titulo-iglesia">Centro Carismático Calvario de México</h1>
-    </div>
-
-    <nav class="menu">
-      <a href="index.html#inicio">INICIO</a>
-      <a href="nosotros.html">NOSOTROS</a>
-      <a href="predicaciones.html" class="active">PREDICACIONES</a>
-
-      <!-- NUEVA PESTAÑA CON SUBMENÚ -->
-      <div class="dropdown">
-        <a href="#" class="dropbtn">GRUPOS</a>
-        <div class="dropdown-content">
-          <a href="adultosjovenes.html">Adultos Jóvenes</a>
-          <a href="mujeres.html">Mujeres</a>
-          <a href="#">Varones</a>
-          <a href="#">Niños</a>
-        </div>
+    <div class="header-container">
+      <!-- LOGO -->
+      <div class="logo-titulo">
+        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="logo" />
+        <h1 class="titulo-iglesia">Centro Carismático Calvario de México</h1>
       </div>
-    </nav>
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MENÚ PRINCIPAL -->
+      <nav class="menu" id="menu">
+        <a href="index.html#inicio">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="predicaciones.html" class="active">PREDICACIONES</a>
+
+        <!-- SUBMENÚ GRUPOS -->
+        <div class="dropdown">
+          <a href="#" class="dropbtn">GRUPOS</a>
+          <div class="dropdown-content">
+            <a href="adultosjovenes.html">Adultos Jóvenes</a>
+            <a href="mujeres.html">Mujeres</a>
+            <a href="#">Varones</a>
+            <a href="#">Niños</a>
+          </div>
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- === SECCIÓN PRINCIPAL === -->
   <section class="predicaciones-section">
@@ -59,7 +75,7 @@
 
       <p class="predicaciones-intro">
         Te invitamos a escuchar nuestras predicaciones, mensajes inspirados por la Palabra de Dios
-        que fortalecerán tu fe, renovarán tu esperanza y llenarán tu vida de propósito.  
+        que fortalecerán tu fe, renovarán tu esperanza y llenarán tu vida de propósito.
         Cada enseñanza es una oportunidad para crecer espiritualmente y acercarte más al corazón de Cristo.
       </p>
 
@@ -115,7 +131,7 @@
 
           <div class="predicacion-card">
             <iframe src="https://www.youtube.com/embed/FnEfaAYlC54?si=bbm8KsoZs6qwCCMB" title="Video 10" frameborder="0" allowfullscreen></iframe>
-            <h3>La oración d elos santos</h3>
+            <h3>La oración de los santos</h3>
           </div>
         </div>
 
@@ -123,34 +139,35 @@
       </div>
     </div>
   </section>
-<!-- === SECCIÓN LISTA DE PREDICACIONES === -->
-<section class="lista-predicaciones-section">
-  <div class="lista-predicaciones-container">
-    <h2>LISTA DE PREDICACIONES</h2>
-    <p class="lista-intro">
-      Aquí podrás encontrar todas nuestras predicaciones y enseñanzas organizadas para que puedas escucharlas cuando quieras. 
-      Cada mensaje ha sido preparado para inspirar, fortalecer y edificar tu fe.  
-      <br><br>
-      <strong>Para más enseñanzas accede al</strong> 
-      <a href="https://www.youtube.com/c/CCCM%C3%A9xico94/videos" target="_blank">Canal oficial de CCC México</a>
-    </p>
 
-    <!-- Contenedor donde se renderizan los videos -->
-    <div id="videoGrid" class="video-grid"></div>
+  <!-- === SECCIÓN LISTA DE PREDICACIONES === -->
+  <section class="lista-predicaciones-section">
+    <div class="lista-predicaciones-container">
+      <h2>LISTA DE PREDICACIONES</h2>
+      <p class="lista-intro">
+        Aquí podrás encontrar todas nuestras predicaciones y enseñanzas organizadas para que puedas escucharlas cuando quieras.
+        Cada mensaje ha sido preparado para inspirar, fortalecer y edificar tu fe.  
+        <br><br>
+        <strong>Para más enseñanzas accede al</strong>
+        <a href="https://www.youtube.com/c/CCCM%C3%A9xico94/videos" target="_blank">Canal oficial de CCC México</a>
+      </p>
 
-    <!-- Paginación -->
-    <div class="pagination">
-      <button id="prevPage" disabled>&laquo; Anterior</button>
-      <span id="pageInfo">Página 1</span>
-      <button id="nextPage">Siguiente &raquo;</button>
+      <!-- Contenedor donde se renderizan los videos -->
+      <div id="videoGrid" class="video-grid"></div>
+
+      <!-- Paginación -->
+      <div class="pagination">
+        <button id="prevPage" disabled>&laquo; Anterior</button>
+        <span id="pageInfo">Página 1</span>
+        <button id="nextPage">Siguiente &raquo;</button>
+      </div>
     </div>
-  </div>
-</section>
-  <!-- === FOOTER (igual que el de las demás páginas) === -->
+  </section>
+
+  <!-- === FOOTER === -->
   <footer id="footer" class="footer-section hidden-left">
     <div class="footer-container">
-
-      <!-- Columna 1: Contacto -->
+      <!-- CONTACTO -->
       <div class="footer-col contacto">
         <h3>CONTACTO</h3>
         <p><i class="fas fa-phone"></i> (+52) 55 21795683</p>
@@ -158,16 +175,16 @@
         <p>
           <i class="fas fa-map-marker-alt"></i>
           <a href="https://maps.app.goo.gl/x46SaQgmGrqSXvEC6" target="_blank">
-            Ezequiel 30, Guadalupe Tepeyac,<br> Gustavo A. Madero, 07840 CDMX
+            Ezequiel 30, Guadalupe Tepeyac,<br />Gustavo A. Madero, 07840 CDMX
           </a>
         </p>
       </div>
 
-      <!-- Columna 2: Logo + Servicio -->
+      <!-- SERVICIOS -->
       <div class="footer-col logo-servicio hidden-right">
-        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="footer-logo">
+        <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="footer-logo" />
         <h4 class="footer-servicios">SERVICIOS</h4>
-        <p><strong>Domingos</strong><br>10:30 AM</p>
+        <p><strong>Domingos</strong><br />10:30 AM</p>
         <div class="footer-redes">
           <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
@@ -175,7 +192,7 @@
         </div>
       </div>
 
-      <!-- Columna 3: Petición -->
+      <!-- PETICIÓN -->
       <div class="footer-col oracion hidden-right">
         <a href="#contacto" class="btn-oracion">PETICIÓN DE ORACIÓN</a>
         <p class="versiculo">
@@ -190,6 +207,8 @@
     </div>
   </footer>
 
+  <!-- === SCRIPTS === -->
+  <script src="menu.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
