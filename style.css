@@ -1817,3 +1817,19 @@ html, body {
     justify-content: center;
   }
 }
+.footer-vinculo {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #d0d0d0;
+}
+
+.footer-vinculo a {
+  color: #d65f7b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-vinculo a:hover {
+  text-decoration: underline;
+}
