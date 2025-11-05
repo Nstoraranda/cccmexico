@@ -14,17 +14,26 @@
 <body>
 <header>
   <div class="header-container">
+    <!-- 🔹 LOGO Y TÍTULO -->
     <div class="logo-titulo">
       <img src="Imagenes/Principal/Logo.jpg" alt="Logo Iglesia" class="logo">
       <h1 class="titulo-iglesia">Centro Carismático Calvario de México</h1>
     </div>
 
-    <nav class="menu">
+    <!-- 🔹 BOTÓN HAMBURGUESA (visible solo en móvil) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- 🔹 MENÚ PRINCIPAL -->
+    <nav class="menu" id="menu">
       <a href="index.html#inicio">INICIO</a>
       <a href="nosotros.html">NOSOTROS</a>
       <a href="predicaciones.html" class="active">PREDICACIONES</a>
 
-      <!-- NUEVA PESTAÑA CON SUBMENÚ -->
+      <!-- 🔹 SUBMENÚ GRUPOS -->
       <div class="dropdown">
         <a href="#" class="dropbtn">GRUPOS</a>
         <div class="dropdown-content">
@@ -34,19 +43,20 @@
           <a href="#">Niños</a>
         </div>
       </div>
-    </nav>
 
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
+      <!-- 🔹 REDES SOCIALES -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1D38THwwUW/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/channel/UC9sSvar_A4Ht3NxJMAW1y7w/CCCM%C3%A9xico94?si=aebvSpEY_Xf6BtJ7" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </nav>
   </div>
 </header>
 
@@ -187,5 +197,6 @@
 </footer>
 
   <script src="script.js"></script>
+  <script src="menu.js"></script>
 </body>
 </html>
