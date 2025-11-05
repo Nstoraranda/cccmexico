@@ -1833,3 +1833,8 @@ html, body {
 .footer-vinculo a:hover {
   text-decoration: underline;
 }
+.nosotros-text p strong {
+  color: #d65f7b;
+  font-weight: 700;
+}
+
